@@ -1,0 +1,6 @@
+Cmnd_Alias C_SYSTEMCTL = \
+  /sbin/systemctl status *, \
+  /sbin/systemctl cat *, \
+  /sbin/systemctl reload nginx
+
+ALL ALL = (root) NOPASSWD: C_SYSTEMCTL
